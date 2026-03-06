@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>민준 ♥ 서연 결혼합니다</title>
+  <meta name="description" content="2026년 5월 2일 토요일 오후 1시, 그랜드하얏트 서울 그랜드볼룸에서 민준과 서연이 결혼합니다.">
+  <meta property="og:title" content="민준 ♥ 서연 결혼합니다">
+  <meta property="og:description" content="2026.05.02 SAT PM 1:00 | 그랜드하얏트 서울">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="invitation-wrapper">
+
+    <!-- ==================== COVER ==================== -->
+    <section class="cover-section" id="cover">
+      <canvas class="cover-petals-canvas" id="petalsCanvas"></canvas>
+      <div class="cover-content">
+        <p class="cover-names-en fade-in">MINJUN & SEOYEON</p>
+        <div class="cover-photo-frame fade-in fade-delay-1">
+          <img src="/images/hero-photo.png" alt="민준과 서연의 웨딩 사진" loading="eager">
+        </div>
+        <h1 class="cover-names fade-in fade-delay-2">
+          김민준 <span class="heart">♥</span> 이서연
+        </h1>
+        <p class="cover-date fade-in fade-delay-3">2026. 05. 02. SAT PM 1:00</p>
+        <p class="cover-venue fade-in fade-delay-4">그랜드하얏트 서울 · 그랜드볼룸</p>
+      </div>
+      <div class="cover-scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== GREETING ==================== -->
+    <section class="greeting-section section" id="greeting">
+      <div class="greeting-icon fade-in"></div>
+      <p class="greeting-quote fade-in fade-delay-1">
+        "서로가 마주보며 웃을 수 있는<br>
+        그런 사랑을 시작합니다"
+      </p>
+      <p class="greeting-message fade-in fade-delay-2">
+        긴 시간 함께 걸어온 길 위에서<br>
+        서로에게 가장 따뜻한 사람이 되기로 했습니다.<br><br>
+        봄의 싱그러운 바람이 부는 날,<br>
+        저희 두 사람의 새로운 시작을<br>
+        함께 축복해 주시면 감사하겠습니다.
+      </p>
+      <div class="greeting-parents fade-in fade-delay-3">
+        <div class="parent-row">
+          <span class="role">신랑측</span>
+          김영수 <span class="dot">·</span> 박미경 <span class="dot">의 아들</span> <span class="child-name">민준</span>
+        </div>
+        <div class="parent-row">
+          <span class="role">신부측</span>
+          이상호 <span class="dot">·</span> 최수진 <span class="dot">의 딸</span> <span class="child-name">서연</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section class="gallery-section section" id="gallery">
+      <p class="section-title fade-in">
+        Gallery
+        <span class="section-title-kr">우리의 순간들</span>
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in fade-delay-1">
+          <img src="/images/couple-2.png" alt="커플 사진 1" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in fade-delay-2">
+          <img src="/images/couple-1.png" alt="커플 사진 2" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in fade-delay-3">
+          <img src="/images/couple-3.png" alt="커플 사진 3" loading="lazy">
+        </div>
+        <div class="gallery-item fade-in fade-delay-4">
+          <img src="/images/hero-photo.png" alt="커플 사진 4" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== CALENDAR ==================== -->
+    <section class="calendar-section section" id="calendar">
+      <p class="section-title fade-in">
+        Wedding Day
+        <span class="section-title-kr">예식 일시</span>
+      </p>
+      <div class="calendar-wrapper fade-in fade-delay-1">
+        <p class="calendar-month-title">May 2026</p>
+        <div class="calendar-grid" id="calendarGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COUNTDOWN ==================== -->
+    <section class="countdown-section section" id="countdown">
+      <div class="countdown-line"></div>
+      <div class="countdown-grid fade-in">
+        <div class="countdown-item">
+          <span class="countdown-number" id="countDays">--</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countHours">--</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countMinutes">--</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="countSeconds">--</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+      <p class="countdown-dday-text fade-in fade-delay-1">
+        민준 <span class="heart-icon">♥</span> 서연의 결혼식이 <span class="highlight" id="dDayText">--일</span> 남았습니다
+      </p>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== LOCATION ==================== -->
+    <section class="location-section section" id="location">
+      <p class="section-title fade-in">
+        Location
+        <span class="section-title-kr">오시는 길</span>
+      </p>
+      <div class="location-info fade-in fade-delay-1">
+        <h3 class="location-venue-name">그랜드하얏트 서울</h3>
+        <p class="location-hall">그랜드볼룸 3층</p>
+        <p class="location-address">서울특별시 용산구 소월로 322</p>
+      </div>
+      <div class="location-map fade-in fade-delay-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2!2d126.9908!3d37.5384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca257a484ef3b%3A0x7078c5b4ec0!2z6re4656c65Oc7J207Jq066m4IOyEnOyauA!5e0!3m2!1sko!2skr!4v1704067200000!5m2!1sko!2skr"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="그랜드하얏트 서울 위치">
+        </iframe>
+      </div>
+      <div class="location-transport fade-in fade-delay-3">
+        <div class="transport-item">
+          <span class="transport-icon">🚇</span>
+          <div class="transport-detail">
+            <p class="transport-label">지하철</p>
+            <p class="transport-desc">6호선 녹사평역 1번 출구 → 셔틀버스 5분</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <span class="transport-icon">🚗</span>
+          <div class="transport-detail">
+            <p class="transport-label">자가용</p>
+            <p class="transport-desc">네비게이션 '그랜드하얏트 서울' 검색<br>주차 3시간 무료</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <span class="transport-icon">🚌</span>
+          <div class="transport-detail">
+            <p class="transport-label">버스</p>
+            <p class="transport-desc">하얏트호텔 정류장 하차 (402, 405번)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact-section section" id="contact">
+      <p class="section-title fade-in">
+        Contact
+        <span class="section-title-kr">축하 연락하기</span>
+      </p>
+
+      <div class="contact-group fade-in fade-delay-1">
+        <span class="contact-group-label">신랑</span>
+        <p class="contact-name">민준</p>
+        <p class="contact-name-en">Minjun</p>
+        <p class="contact-parent-names">김영수 <span style="color:var(--color-border);">|</span> 박미경</p>
+        <p class="contact-relation">아들</p>
+        <div class="contact-buttons">
+          <a href="tel:010-1234-5678" class="contact-btn" aria-label="신랑에게 전화하기">
+            📞 전화
+          </a>
+          <a href="sms:010-1234-5678" class="contact-btn" aria-label="신랑에게 문자하기">
+            💌 문자
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-divider"></div>
+
+      <div class="contact-group fade-in fade-delay-2">
+        <span class="contact-group-label">신부</span>
+        <p class="contact-name">서연</p>
+        <p class="contact-name-en">Seoyeon</p>
+        <p class="contact-parent-names">이상호 <span style="color:var(--color-border);">|</span> 최수진</p>
+        <p class="contact-relation">딸</p>
+        <div class="contact-buttons">
+          <a href="tel:010-8765-4321" class="contact-btn" aria-label="신부에게 전화하기">
+            📞 전화
+          </a>
+          <a href="sms:010-8765-4321" class="contact-btn" aria-label="신부에게 문자하기">
+            💌 문자
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ==================== ACCOUNT (축의금) ==================== -->
+    <section class="account-section section" id="account">
+      <p class="section-title fade-in">
+        Celebration
+        <span class="section-title-kr">마음 전하기</span>
+      </p>
+      <p class="account-message fade-in fade-delay-1">
+        참석이 어려우신 분들을 위해<br>
+        계좌번호를 안내드립니다.
+      </p>
+
+      <!-- 신랑측 -->
+      <button class="account-toggle-btn fade-in fade-delay-2" data-target="groomAccount" aria-label="신랑측 계좌 보기">
+        🤵 신랑측 계좌 보기 <span class="arrow">▼</span>
+      </button>
+      <div class="account-details" id="groomAccount">
+        <div class="account-card">
+          <p class="account-card-label">신랑</p>
+          <p class="account-card-bank">카카오뱅크</p>
+          <p class="account-card-number">3333-01-1234567</p>
+          <button class="account-copy-btn" data-account="3333-01-1234567" aria-label="계좌번호 복사">
+            복사하기
+          </button>
+        </div>
+        <div class="account-card">
+          <p class="account-card-label">신랑 아버지</p>
+          <p class="account-card-bank">국민은행</p>
+          <p class="account-card-number">123-45-6789012</p>
+          <button class="account-copy-btn" data-account="123-45-6789012" aria-label="계좌번호 복사">
+            복사하기
+          </button>
+        </div>
+      </div>
+
+      <!-- 신부측 -->
+      <button class="account-toggle-btn fade-in fade-delay-3" data-target="brideAccount" aria-label="신부측 계좌 보기">
+        👰 신부측 계좌 보기 <span class="arrow">▼</span>
+      </button>
+      <div class="account-details" id="brideAccount">
+        <div class="account-card">
+          <p class="account-card-label">신부</p>
+          <p class="account-card-bank">신한은행</p>
+          <p class="account-card-number">110-456-789012</p>
+          <button class="account-copy-btn" data-account="110-456-789012" aria-label="계좌번호 복사">
+            복사하기
+          </button>
+        </div>
+        <div class="account-card">
+          <p class="account-card-label">신부 아버지</p>
+          <p class="account-card-bank">우리은행</p>
+          <p class="account-card-number">1002-567-890123</p>
+          <button class="account-copy-btn" data-account="1002-567-890123" aria-label="계좌번호 복사">
+            복사하기
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-heart">♥</div>
+      <p class="footer-names">민준 & 서연</p>
+      <p class="footer-date">2026. 05. 02</p>
+      <p class="footer-credit">MOBILE INVITATION</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="사진 크게 보기">
+      <button class="lightbox-close" aria-label="닫기">✕</button>
+      <img src="" alt="갤러리 사진 확대" id="lightboxImage">
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">복사되었습니다</div>
+
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/countdown.js"></script>
+  <script type="module" src="/js/petals.js"></script>
+  <script type="module" src="/js/calendar.js"></script>
+</body>
+
+</html>
